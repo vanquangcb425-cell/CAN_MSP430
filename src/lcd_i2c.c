@@ -51,6 +51,8 @@ void lcd_init(void) {
 	lcd_command(0x0C); // display on, cursor off
 }
 
+void lcd_i2c_init(void) { lcd_init(); }
+
 void lcd_clear(void) { lcd_command(0x01); __delay_cycles(50000); }
 void lcd_home(void) { lcd_command(0x02); __delay_cycles(50000); }
 

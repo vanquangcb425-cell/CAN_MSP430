@@ -69,3 +69,8 @@ float hx711_to_grams(long raw) {
 	return net / SCALE_FACTOR;
 }
 
+float hx711_get_units(unsigned int samples) {
+	long avg = hx711_read_average(samples);
+	return hx711_to_grams(avg);
+}
+

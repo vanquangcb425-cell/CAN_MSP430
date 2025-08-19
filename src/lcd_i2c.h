@@ -6,6 +6,7 @@
 #define LCD_I2C_ADDRESS 0x27
 
 void lcd_init(void);
+void lcd_i2c_init(void);
 void lcd_clear(void);
 void lcd_home(void);
 void lcd_set_cursor(unsigned char col, unsigned char row);

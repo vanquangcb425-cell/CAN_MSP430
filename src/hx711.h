@@ -27,4 +27,5 @@ void hx711_power_up(void);
 void hx711_set_tare(long tare);
 long hx711_get_offset(void);
 float hx711_to_grams(long raw);
+float hx711_get_units(unsigned int samples);
 

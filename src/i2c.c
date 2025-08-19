@@ -3,7 +3,6 @@
 // I2C on USCI_B0, P1.6 = SCL, P1.7 = SDA for MSP430G2553
 
 void i2c_init(void) {
-	WDTCTL = WDTPW | WDTHOLD;
 	UCB0CTL1 |= UCSWRST; // put USCI_B0 in reset
 	P1SEL |= BIT6 | BIT7; // I2C pins
 	P1SEL2 |= BIT6 | BIT7;
