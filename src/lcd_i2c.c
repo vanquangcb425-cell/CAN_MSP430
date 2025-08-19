@@ -1,5 +1,8 @@
 #include "lcd_i2c.h"
 #include "i2c.h"
+#ifdef __IAR_SYSTEMS_ICC__
+#include <intrinsics.h>
+#endif
 
 // LCD via PCF8574 backpack (HD44780)
 // Control bits in expander nibble

@@ -1,4 +1,7 @@
 #include "hx711.h"
+#ifdef __IAR_SYSTEMS_ICC__
+#include <intrinsics.h>
+#endif
 
 static unsigned char hx711_gain = HX711_GAIN_128; // default A 128
 static long hx711_offset = 0;

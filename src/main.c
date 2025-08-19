@@ -1,6 +1,9 @@
 #include <msp430.h>
 #include <string.h>
 #include <stdio.h>
+#ifdef __IAR_SYSTEMS_ICC__
+#include <intrinsics.h>
+#endif
 #include "i2c.h"
 #include "lcd_i2c.h"
 #include "hx711.h"
